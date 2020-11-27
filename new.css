@@ -7,6 +7,62 @@
   outline: none;
 
 }
+/*Contact Form*/
+.contact-form{
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgb(255,255,255);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 10px black;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields, .msg{
+  width:48%;
+}
+.input-fields .input, 
+.msg textarea{
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 2px solid red;
+  padding: 10px;
+  color:red;
+  width:100%;
+
+}
+
+.msg textarea{
+  height: 200px;
+}
+
+::-webkit-input-placeholder{
+  color:black;
+}
+
+.btn{
+  background: blue;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: pink;
+  cursor: pointer;
+}
+.checkbox{
+  height:
+}
+
+.acnc-logo{
+  width:100px;
+  height:500px;
+}
 h2{
   text-align:center;
   margin: auto;
@@ -155,7 +211,7 @@ a {
     "quote quote"
     "us our-work"
     "cta cta"
-    "footer footer";
+    "contact license";
 }
 
 .header{grid-area: header; padding-top: 50px; padding-bottom: 30px;}
@@ -215,9 +271,9 @@ a {
   grid-area: footer;
 }
 
-.license { grid-area: license; }
+.license { grid-area: license; width:100%; min-height:500px; }
 
-.contact { grid-area: contact; }
+.contact { grid-area: contact; width:100%; min-height:500px; }
 
 .us {
   padding-top: 0px;
@@ -241,7 +297,7 @@ margin: auto;
 }
 .us-title { grid-area: us-title; font-weight: bold; font-size: 2vw; }
 .us-title, .work-title{padding: 20px 100px;}
-.us-title, .work-title, .quote{
+.us-title, .work-title, .quote, .contact, .license{
   background-color:rgba(55, 125, 206); color:white;
 }
 .us-desc { grid-area: us-desc; font-size: 1.5vw;padding: 15px; }
@@ -319,7 +375,7 @@ button:active{
     "picture text"
     "about-menu about-menu"
     "content content"
-    "footer footer";
+    "contact license";
 }
 .radios{border: solid 3px blue; display:flex;flex-direction: row;}
 .about-menu {
@@ -437,7 +493,8 @@ button:active{
     font-size: 3vw;
   }
   .header{padding: 0px;}
- .text, .picture, .us, .our-work, .cta, .footer{
+  /*turn everything into columns*/
+ .text, .picture, .us, .our-work, .cta, .contact, .license{
     width:100%;
     min-height: 200px;
     padding-bottom: 40px;
