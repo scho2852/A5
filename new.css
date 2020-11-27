@@ -7,6 +7,14 @@
   outline: none;
 
 }
+h2{
+  text-align:center;
+  margin: auto;
+}
+a {
+  font-weight: bolder;
+  color: #000;
+}
 /*Contact Form*/
 .contact-form{
   max-width: 550px;
@@ -63,15 +71,6 @@
   width:100px;
   height:500px;
 }
-h2{
-  text-align:center;
-  margin: auto;
-}
-a {
-  font-weight: bolder;
-  color: #000;
-}
-
 /* header */
 
 .header { 
@@ -211,7 +210,7 @@ a {
     "quote quote"
     "us our-work"
     "cta cta"
-    "contact license";
+    "footer footer";
 }
 
 .header{grid-area: header; padding-top: 50px; padding-bottom: 30px;}
@@ -271,9 +270,9 @@ a {
   grid-area: footer;
 }
 
-.license { grid-area: license; width:100%; min-height:500px; }
+.license { grid-area: license; }
 
-.contact { grid-area: contact; width:100%; min-height:500px; }
+.contact { grid-area: contact; }
 
 .us {
   padding-top: 0px;
@@ -297,7 +296,7 @@ margin: auto;
 }
 .us-title { grid-area: us-title; font-weight: bold; font-size: 2vw; }
 .us-title, .work-title{padding: 20px 100px;}
-.us-title, .work-title, .quote, .contact, .license{
+.us-title, .work-title, .quote{
   background-color:rgba(55, 125, 206); color:white;
 }
 .us-desc { grid-area: us-desc; font-size: 1.5vw;padding: 15px; }
@@ -375,7 +374,7 @@ button:active{
     "picture text"
     "about-menu about-menu"
     "content content"
-    "contact license";
+    "footer footer";
 }
 .radios{border: solid 3px blue; display:flex;flex-direction: row;}
 .about-menu {
@@ -493,8 +492,7 @@ button:active{
     font-size: 3vw;
   }
   .header{padding: 0px;}
-  /*turn everything into columns*/
- .text, .picture, .us, .our-work, .cta, .contact, .license{
+ .text, .picture, .us, .our-work, .cta, .footer{
     width:100%;
     min-height: 200px;
     padding-bottom: 40px;
