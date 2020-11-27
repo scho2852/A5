@@ -1,3 +1,7 @@
+.header, .about-menu, .picture, .text, .what-exp{
+  border:3px solid red;
+}
+.license, .contact{border:3px solid rgb(116, 143, 231)}
 *{
   margin: 0;
   padding: 0;
@@ -35,6 +39,9 @@ a {
   background-color: #fff;
   align-items: flex-end;
   justify-content: center;
+}
+.header ul li{
+  padding-top:7px;
 }
 
 .menu a:hover {
@@ -211,13 +218,13 @@ a {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "license contact";
+    "contact license";
   grid-area: footer;
 }
 
-.license { grid-area: license; }
+.license { grid-area: license; padding: 50px;}
 
-.contact { grid-area: contact; }
+.contact { font-size: 2vw; grid-area: contact; padding: 50px; }
 
 .us {
   padding-top: 0px;
@@ -231,7 +238,7 @@ a {
   grid-area: us;
 }
 img{
-  object-fit: cover;
+  object-fit: cover;.
   max-width: 100%;
   max-height: 100%;}
 
@@ -241,7 +248,7 @@ margin: auto;
 }
 .us-title { grid-area: us-title; font-weight: bold; font-size: 2vw; }
 .us-title, .work-title{padding: 20px 100px;}
-.us-title, .work-title, .quote{
+.us-title, .work-title, .quote, .footer{
   background-color:rgba(55, 125, 206); color:white;
 }
 .us-desc { grid-area: us-desc; font-size: 1.5vw;padding: 15px; }
@@ -280,7 +287,7 @@ button{
   cursor:pointer;
 }
 
-.donate-button{
+.donate-button, .send{
   text-align: center;
   font-weight: bold;
   display:inline-block;
@@ -297,6 +304,8 @@ button{
   position:relative;
   transition: all 0.3s;
 }
+
+
 .donate-button:hover{
 transform: scale(1.08);
 }
@@ -307,21 +316,125 @@ button:focus {outline:0;}
 button:active{
   top: 0.1em;
 }
+/*WHAT's happening*/
+/*what's happening*/
+.what-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header"
+    "picture text"
+    "about-menu about-menu"
+    "what-picture what-text"
+    "what-exp what-exp-media"
+    "what-work what-work"
+    "what-help what-help"
+    "cta cta"
+    "footer footer";
+}
+
+
+.about-menu { grid-area: about-menu; }
+
+.what-picture { grid-area: what-picture; }
+
+.what-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "what-phrase"
+    "what-desc";
+  grid-area: what-text;
+}
+
+.what-phrase { grid-area: what-phrase; }
+
+.what-desc { grid-area: what-desc; }
+
+.what-exp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "what-exp-title"
+    "what-exp-desc";
+  grid-area: what-exp;
+}
+
+.what-exp-title { grid-area: what-exp-title; }
+
+.what-exp-desc { grid-area: what-exp-desc; }
+
+.what-exp-media { grid-area: what-exp-media; }
+
+.what-work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "what-work-title"
+    "what-work-picture";
+  grid-area: what-work;
+}
+
+.what-work-title { grid-area: what-work-title; }
+
+.what-work-picture { grid-area: what-work-picture; }
+
+.what-help {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "what-help-title what-help-title what-help-title"
+    "what-help1 what-help2 what-help3";
+  grid-area: what-help;
+}
+
+.what-help-title { grid-area: what-help-title; }
+
+.what-help1 { grid-area: what-help1; }
+
+.what-help2 { grid-area: what-help2; }
+
+.what-help3 { grid-area: what-help3; }
+
 
 /*About-grid*/
 .about-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 1.4fr 0.3fr 1.4fr 0.7fr;
+  grid-template-rows: 0.4fr 1.4fr 0.3fr 1.4fr 0.9fr 0.5fr;
   gap: 0px 0px;
   grid-template-areas:
     "header header"
     "picture text"
     "about-menu about-menu"
     "content content"
+    "cta cta"
     "footer footer";
 }
-.about-menu {
+.cta {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "cta-msg"
+    "cta-button";
+  grid-area: cta;
+}
+
+.cta-msg { grid-area: cta-msg; font-weight: bolder; font-size: 5vw; }
+
+.cta-button { align-items: center; grid-area: cta-button; margin: auto; }.about-menu {
   border:solid 3px red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -366,9 +479,9 @@ button:active{
 
 .about-desc { grid-area: about-desc; }
 
- .who, .our-goal, .our-value{
-      padding-top:50px;
- }
+.who, .our-goal, .our-value{
+  padding-top:50px;
+}
 
 /*RADIO BUTTONS*/
 
@@ -394,13 +507,75 @@ button:active{
 	transition: .2s;
 }
 
-.about-menu input[type="radio"]:checked + label {
+.about-menu input[type="radio"]:checked + label{
 	background-color: rgba(55, 125, 206);
 	color: #fff;
 }
+/* CONTACT*/
+.keep-text{color:black; font-size: 1vw;}
+.contact-form{
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgb(255,255,255);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields, .msg{
+  width:48%;
+}
+.input-fields .input, 
+.msg textarea{
+  font-size: 1vw;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  color:black;
+  width:100%;
+
+}
+
+.msg textarea{
+  height: 200px;
+}
+
+.placeholder{
+  color:black;
+  font-size: 2vw;
+}
+
+.btn{
+  background: blue;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: pink;
+  cursor: pointer;
+}
+.checkbox{
+  height:
+}
+
+.acnc-logo{
+  width:100px;
+  height:500px;
+}
+
+
+
+
 
 /* RESPONSIVE */
-@media (min-width: 48em) { /*laptop*/
+@media screen and (min-width: 48em) { /*laptop*/
 .us{padding-top:0px;}
   .header li {
     float: left;
@@ -417,6 +592,8 @@ button:active{
     display: none;
   }
 }
+
+/*contact form*/
 /*MOBILE */
 @media screen and (max-width: 48em){ 
   .grid-container, .about-grid-container{
@@ -425,7 +602,17 @@ button:active{
   .about-menu label{
     font-size:4vw;
   }
+  .contact-form{
+    flex-direction: column;
+  }
 
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
   /*radio buttons line up in column*/
 
   .cta-msg, .work-title, .quote, .phrase-desc, .us-title{
