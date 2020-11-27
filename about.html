@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Web Documentation</title>
-	<link href="new.css" rel="stylesheet" type="text/css" />
-
-
-</head>
-
-<body>
-	<!DOCTYPE html>
 	<html>
 
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 		<title>Web Documentation</title>
 		<link href="new.css" rel="stylesheet" type="text/css" />
-
-
 	</head>
 
 	<body>
 		<div class="about-grid-container">
 		<header class="header">
-			<a href="" class="logo">logo</a>
+			<a href="index.html" class="logo">logo</a>
 			<input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About Us</a></li>
         <li><a href="what.html">What's Happening?</a></li>
         <li><a href="donate.html">Our Impact</a></li>
         <li><button onclick="location.href='donate.html'" class ="donate-button"> DONATE</button></li>
@@ -41,25 +26,15 @@
   <div class="text">
     <div class="phrase">About Us</div>
     <div class="phrase-desc">We are the UN Refugee Agency’s national partner in Australia, raising awareness and funds to support UNHCR’s global emergency response to humanitarian crises.</div>
-  </div>
-  <div class="about-menu">
-    <div class="who"><input type="radio" name="about" id="a1" value="1" checked="">
-    <label for="select1">Who Are We?</label></div>
-    <div class="our-goal"><input type="radio" name="about" id="a2" value="2">
-    <label for="select2">Our Goal</label></div>
-    <div class="our-value"><input type="radio" name="about" id="a3" value="3">
-    <label for="select3">Our Values</label></div></div>
- 
-
-  <div class="sample">
-    <input type="radio" name="about" id="a1" value="1" checked="">
-    <label for="select1">Who Are We?</label>
-    <input type="radio" name="about" id="a2" value="2">
-    <label for="select2">Our Goal</label>
-    <input type="radio" name="about" id="a3" value="3">
-    <label for="select3">Our Values</label></div>
-
-
+  </div> <!--Radio Buttons-->
+    <div class="about-menu">
+    <input type="radio" name="about" id="who" value="1" checked="">
+    <label for="who">US</label>
+    <input type="radio" name="about" id="values" value="2">
+    <label for="values">VALUE</label>
+    <input type="radio" name="about" id="goal" value="3">
+    <label for="goal">GOAL</label>
+</div>
   
   <div class="about-footer"></div>
   <div class="content">
