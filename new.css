@@ -1,3 +1,58 @@
+
+#crisis-pic{margin-top:50px; width:100%;}
+#crisis-text{margin-top:120px;}
+.what-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1.4fr 0.4fr 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header"
+    "picture text"
+    "about-menu about-menu"
+    "what-text what-picture"
+    "what-work what-work"
+    "what-help what-help"
+    "cta cta"
+    "contact license";
+}
+
+.what-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "what-title"
+    "what-desc";
+  grid-area: what-text;
+}
+
+.what-title { grid-area: what-title; }
+
+.what-desc { grid-area: what-desc; }
+
+.what-picture { grid-area: what-picture; }
+
+.what-work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 1.4fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "what-work-title"
+    "what-work-desc"
+    "what-work-pic";
+  grid-area: what-work;
+}
+
+.what-work-title { grid-area: what-work-title; }
+
+.what-work-desc { grid-area: what-work-desc; }
+
+.what-work-pic { grid-area: what-work-pic; }
+
+.what-help { grid-area: what-help; }
 *{
   margin: 0;
   padding: 0;
@@ -24,7 +79,6 @@ a {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  box-shadow: 0 0 10px black;
 }
 
 .input-fields{
@@ -40,9 +94,9 @@ a {
 .msg textarea{
   margin: 10px 0;
   border: 0;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid black;
   padding: 10px;
-  color:red;
+  color:black;
   width:100%;
 
 }
@@ -202,7 +256,7 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1.4fr 0.4fr 1.3fr 0.7fr 0.7fr;
+  grid-template-rows: 0.3fr 1.4fr 0.4fr 1.3fr 0.7fr 0.7fr;
   gap: 0px 0px;
   grid-template-areas:
     "header header"
@@ -223,10 +277,10 @@ a {
 .us, .our-work{
   max-height: 300px;
 }
-
-.phrase-desc, .us-desc, .work-desc{
+ .phrase-desc, .us-desc, .work-desc{
   text-indent:2em; 
-  padding: 0 25px;
+
+  padding: 15px;
 }
 .quote {
   width:100%;
@@ -256,12 +310,12 @@ a {
 
 .phrase { margin: auto; grid-area: phrase; text-align: center; font-weight:bolder; font-size: 5vw; }
 
-.phrase-desc { grid-area: phrase-desc; font-size: 2vw; }
+.phrase-desc { grid-area: phrase-desc; font-size: 1.5vw; text-indent:3em; }
 
 .picture { grid-area: picture; }
 
 .footer {
-  display: grid;
+  display:flex;flex-direction: row;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
@@ -296,7 +350,7 @@ margin: auto;
 }
 .us-title { grid-area: us-title; font-weight: bold; font-size: 2vw; }
 .us-title, .work-title{padding: 20px 100px;}
-.us-title, .work-title, .quote{
+.us-title, .work-title, .quote, .footer{
   background-color:rgba(55, 125, 206); color:white;
 }
 .us-desc { grid-area: us-desc; font-size: 1.5vw;padding: 15px; }
