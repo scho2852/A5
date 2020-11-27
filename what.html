@@ -11,21 +11,43 @@
 </head>
 
 <body>
-  <header>
-		<nav id="global-nav">
-
-			<ul>
-				<li><a class="logo" href="index.html"><img src="images/logo.png"></a></li>
-        <li><a class="active" href = "index.html"">HOME</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a class="active" href="what.html">WHAT'S HAPPENING</a></li>
-        <li><a href="#">OUR IMPACT</a></li>
-        <li><a href="#">DONATE</a></li>
-        <li><a href="#">KEEP IN TOUCH</a></li>
-        <li><a href="#">CONTACT US</a></li>
+	<header>
+		<ul class="menu">
+			<li><a class="logo" href="index.html"><img src="images/logo.png"></a></li>
+				
+        <li class="logo-flex"><a class="active" href = "index.html"">HOME</a></li>
+        <li class="opt-flex"><a href="about.html">ABOUT US</a></li>
+        <li class="opt-flex"><a href="what.html">WHAT'S HAPPENING</a></li>
+        <li class="opt-flex"><a href="#">OUR IMPACT</a></li>
+        <li class="opt-flex"><a href="#">KEEP IN TOUCH</a></li>
+        <li class="opt-flex"><a href="#">CONTACT US</a></li>
+        <li class="button-flex"><button onclick="location.href='donate.html'" class="donate">DONATE</button></li>
     </ul>
-		</nav>
 	</header>
+  <div class="start">
+
+    <div class="front-container">
+    <div class="pic-flex">
+      <div class="acnc-logo">
+      <img src="images/acnc.png" style="width:100%;"></div></div>
+    <div class="text-flex">
+     
+        <div class="title"><h1 >Contact Us</h1></div>
+        <div class="contact-form">
+          <div class="input-fields">
+            <input type="text" class="input"  placeholder="First Name">
+            <input type="text" class="input" placeholder="Last Name">
+            <input type="email" class="input"  placeholder="Email">
+            <span class="checkmark"><input class="checkbox" type="checkbox" checked="checked"><label class="keep-text">Keep Me Informed</label></span>
+          </div>
+          <div class="msg">
+            <textarea placeholder="Inquiry"></textarea>
+            <div class="btn">SEND</div></div>
+    </div>
+  </div>
+</div>
+
+    </div> <!-- start ends-->
 </body>
 
 </html>

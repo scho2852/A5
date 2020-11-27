@@ -5,21 +5,71 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Web Documentation</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="new.css" rel="stylesheet" type="text/css" />
 
-	<div class="container">
-	
-    <div class = "nav">
-      <ul>
-        <li class = "logo"><a href="index.html"><img src="images/logo.png"></a></li>
-        <li><a href = "index.html"">HOME</a></li>
-        <li><a class="active" href="about.html">ABOUT US</a></li>
-        <li><a href="#">WHAT'S HAPPENING?</a></li>
-        <li><a href="#">OUR IMPACT</a></li>
-        <li><a href="#">DONATE</a></li>
-        <li><a href="#">KEEP IN TOUCH</a></li>
-        <li><a href="#">CONTACT US</a></li>
-      </ul>
-    </div>
-	</div>
+
 </head>
+
+<body>
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Web Documentation</title>
+		<link href="new.css" rel="stylesheet" type="text/css" />
+
+
+	</head>
+
+	<body>
+		<div class="about-grid-container">
+		<header class="header">
+			<a href="" class="logo">logo</a>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="what.html">What's Happening?</a></li>
+        <li><a href="donate.html">Our Impact</a></li>
+        <li><button onclick="location.href='donate.html'" class ="donate-button"> DONATE</button></li>
+      </ul>
+    </header>
+  <div class="picture"><img src="images/about.jpg" style="width:100%;"></div>
+  <div class="text">
+    <div class="phrase">About Us</div>
+    <div class="phrase-desc">We are the UN Refugee Agency’s national partner in Australia, raising awareness and funds to support UNHCR’s global emergency response to humanitarian crises.</div>
+  </div>
+  <div class="about-menu">
+    <div class="who"><input type="radio" name="about" id="a1" value="1" checked="">
+    <label for="select1">Who Are We?</label></div>
+    <div class="our-goal"><input type="radio" name="about" id="a2" value="2">
+    <label for="select2">Our Goal</label></div>
+    <div class="our-value"><input type="radio" name="about" id="a3" value="3">
+    <label for="select3">Our Values</label></div></div>
+ 
+
+  <div class="sample">
+    <input type="radio" name="about" id="a1" value="1" checked="">
+    <label for="select1">Who Are We?</label>
+    <input type="radio" name="about" id="a2" value="2">
+    <label for="select2">Our Goal</label>
+    <input type="radio" name="about" id="a3" value="3">
+    <label for="select3">Our Values</label></div>
+
+
+  
+  <div class="about-footer"></div>
+  <div class="content">
+    <div class="about-pic"></div>
+    <div class="about-text">
+      <div class="about-title"></div>
+      <div class="about-desc"></div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
