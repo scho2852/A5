@@ -1,5 +1,5 @@
-.donate-section{  margin-top: 20px; margin-bottom:10px;
-}
+.donate-section{  margin-top: 20px; margin-bottom:10px;}
+.don-fig{width:400px;}
 .donate-form{font-weight:bold; text-align:center; margin:auto;font-size:40px; margin-bottom:25px;}
 
 #donate-text{padding-top:50px;}
@@ -346,11 +346,11 @@ a {
 }
 
 .header .logo {
-  border: 2px solid purple;
+  margin: auto;
   display: block;
   float: left;
   font-size: 2em;
-  width:15%;
+  width:20%;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -367,9 +367,10 @@ a {
 
 .header .menu-icon {
   cursor: pointer;
+  font-size:20px;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 40px 35px;
   position: relative;
   user-select: none;
 }
@@ -909,6 +910,11 @@ input {
   }
   #org-input{width:250px;}
   #ten,#twentyfive,#fifty{margin-right:0;}
+  .don-fig{width:300px;}
+
+
+  .header .logo {width:250px; padding-top:20px;}
+
   
 
   
