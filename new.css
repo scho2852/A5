@@ -1,8 +1,11 @@
+#donate-desc{text-align:center;}
+ion-icon { font-size: 50px; color:white;}
+.sns-container li{list-style:none;padding:10px; margin:auto;}
+.sns-container {display:flex; flex-direction:row;}
 .donate-section{  margin-top: 20px; margin-bottom:10px;}
 .don-fig{width:400px;}
 .donate-form{font-weight:bold; text-align:center; margin:auto;font-size:40px; margin-bottom:25px;}
-.sns-container{font-size:20px; font-weight:bold;}
-.sns{color:white; text-decoration:none;font-weight:bold; font-size:20px; padding:20px;}
+.license{display:flex; flex-direction:row;}
 #donate-text{padding-top:50px;}
 .don-fig{width:400px;}
 .doc-form {
@@ -481,7 +484,7 @@ a {
   grid-area: footer;
 }
 
-.license {flex: 1;grid-area: license; display:flex; flex-direction:row; text-align: center; margin:auto;}
+.license {flex: 1;grid-area: license; text-align: center; margin:auto;}
 
 .contact {flex: 1; font-size: 30px; text-align: center; font-weight:bold; grid-area: contact; margin:15px;}
 
@@ -743,9 +746,7 @@ figcaption{font-size:1.2vw; margin:0 10px;}
 }
 .own, .name, .contact{
   display:block;
-  margin:auto;
-  font-size: 25px;
-}
+  margin:auto;}
 
 .name, .contact{
   display: flex;
@@ -844,7 +845,6 @@ input {
 
 /*MOBILE */
 @media screen and (max-width: 48em){
-  #impact-pic{padding-top:30px;}
   .contact{flex-direction:column;}
   .contact-form{min-width:90%;}
     #name-tel{flex-direction: column;}
@@ -857,7 +857,7 @@ input {
   .syria-work-title, .syria-help-title, .syria-help-title{padding:5px;}
     #crisis-pic, #crisis-tex{margin-top:30px;}
  
-  .contact-form, .activities, .content, .syria-container, .syria-help-pic-container, .syria-work-pic-container, .what-front-container, .us-container, .license{
+  .contact-form, .activities, .content, .syria-container, .syria-help-pic-container, .syria-work-pic-container, .what-front-container, .us-container{
     flex-direction: column;
   }
 
@@ -916,6 +916,8 @@ input {
 
 
   .header .logo {width:250px; padding-top:20px;}
+
+  .license{display:flex; flex-direction:column;}
 
   
 
