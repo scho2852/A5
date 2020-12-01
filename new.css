@@ -712,6 +712,7 @@ figcaption{font-size:1.2vw; margin:0 10px;}
 
 /* RESPONSIVE */
 @media (min-width: 48em) { /*laptop*/
+img{  margin-top:-15px;}
 .us{padding-top:0px;}
   .header li {
     float: left; padding-top:10px;
