@@ -330,25 +330,22 @@ a {
 }
 
 .menu a:hover {
-  color: rgba(55, 125, 206);
-  //background-color: #F4B57A;
-}
+  color: rgba(55, 125, 206);}
 .menu a.active, .active{
   border-bottom: 3px solid #F4B57A;
 }
 
 .header li a {
   align-items:center;
-
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 2px solid rgb(240, 240, 240);
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: rgb(240, 240, 240);
 }
 
 .header .logo {
@@ -360,8 +357,6 @@ a {
   padding: 10px 20px;
   text-decoration: none;
 }
-
-/* menu */
 
 .header .menu {
   clear: both;
@@ -379,34 +374,6 @@ a {
   padding: 40px 35px;
   position: relative;
   user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.3s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
 }
 
 /* menu btn */
