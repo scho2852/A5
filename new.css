@@ -1,3 +1,6 @@
+#home-cta{margin-top:0px;}
+#donate-desc{text-align:center;}
+#us-pic{margin-top:0;}
 #donate-desc{text-align:center;}
 ion-icon { font-size: 50px; color:white;}
 .sns-container li{list-style:none;padding:10px; margin:auto;}
@@ -547,7 +550,7 @@ margin: 0 auto;
 .work-desc { margin: 25px; grid-area: work-desc; padding: 15px;  font-size: 1.5vw;}
 
 .cta {
-  margin-top:100px;
+  margin-top:250px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.6fr 1.4fr;
