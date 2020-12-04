@@ -5,7 +5,8 @@ ion-icon { font-size: 50px; color:white;}
 .sns-container li{list-style:none;padding:10px; margin:auto;}
 .sns-container {display:flex; flex-direction:row;}
 
-
+#don-img{height:200px; width:200px;}
+#don-img figcaption{width:200px;}
 #donate-desc{text-align:center;}
 #donate-desc{text-align:center;}
 .donate-section{  margin-top: 20px; margin-bottom:10px;}
@@ -311,21 +312,20 @@ a {
 /* header */
 
 .header { 
-  background-color: white;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
   width: 100%;
-  z-index: 3;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.2);
+  position: fixed;
 }
 
 .header ul {
+  align-items: flex-end;
+  overflow: hidden;
   font-size: 1.2vw;
   margin: 0;
   padding: 0 20px;
   list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-  align-items: flex-end;
+  background-color: white;
   justify-content: center;
 }
 
@@ -336,8 +336,6 @@ a {
 .menu a.active, .active{
   border-bottom: 3px solid #F4B57A;
 }
-
-
 
 .header li a {
   align-items:center;
@@ -775,39 +773,6 @@ input {
 }
 
 .contact{display:flex; flex-direction: column;}
-.sample{
-  margin:auto;
-}
-.sample input{
-	display: none;
-}
-.sample label{
-	display: block;
-	float: left;
-	cursor: pointer;
-  min-width: 100px;
-	//max-width: 100px;
-	margin: 5px;
-	padding: 12px 5px;
-	border-right: 1px solid #abb2b7;
-	background: #bdc3c7;
-	color: #555e64;
-	font-size: 25px;
-	text-align: center;
-	line-height: 1;
-	transition: .2s;
-}
-.sample label:first-of-type{
-	border-radius: 3px 0 0 3px;
-}
-.sample label:last-of-type{
-	border-right: 0px;
-	border-radius: 0 3px 3px 0;
-}
-.sample input[type="radio"]:checked + label {
-	background-color: #a1b91d;
-	color: white;
-}
 
 .syria-container, .us-container{display:flex; flex-direction:row;}
 .syria-text{flex:1;margin:auto; }
@@ -921,11 +886,5 @@ input {
   .header .logo {width:250px; padding-top:20px;}
 
   .license{display:flex; flex-direction:column;}
-
-  
-
   
 }
-
-#don-img{height:200px; width:200px;}
-#don-img figcaption{width:200px;}
