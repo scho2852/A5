@@ -280,12 +280,13 @@ a {
 }
 .input-fields .input, 
 .msg textarea{
+  color:black;
   margin: 10px 0;
   border: 0;
   border-bottom: 2px solid black;
-  padding: 10px;
-  color:black;
   width:100%;
+  padding: 10px;
+
 
 }
 
