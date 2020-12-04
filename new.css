@@ -1,10 +1,13 @@
 #home-cta{margin-top:0px;}
-#donate-desc{text-align:center;}
 #us-pic{margin-top:0;}
-#donate-desc{text-align:center;}
+
 ion-icon { font-size: 50px; color:white;}
 .sns-container li{list-style:none;padding:10px; margin:auto;}
 .sns-container {display:flex; flex-direction:row;}
+
+
+#donate-desc{text-align:center;}
+#donate-desc{text-align:center;}
 .donate-section{  margin-top: 20px; margin-bottom:10px;}
 .don-fig{width:400px;}
 .donate-form{font-weight:bold; text-align:center; margin:auto;font-size:40px; margin-bottom:25px;}
@@ -19,7 +22,6 @@ ion-icon { font-size: 50px; color:white;}
   width:80%;
   margin:auto;
   margin-bottom:20px;
-
   display: flex;
   flex-direction: column;
   grid-template-columns: 1fr;
@@ -34,8 +36,7 @@ ion-icon { font-size: 50px; color:white;}
     "card-name-cvs"
     "submit";
 }
-/**inputs
-.name-input, .cvs-input, .exp-input, .card-name-input,.card-num-input, .tel-input, .give-input,.email-input, .regular, .once, .ten,.twentyfive,.fifty, .org **/
+
 .submit{ grid-area:submit; text-align: center;}
 .card-name-cvs {
   display: grid;
@@ -310,7 +311,7 @@ a {
 /* header */
 
 .header { 
-  background-color: #fff;
+  background-color: white;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
@@ -656,8 +657,7 @@ figcaption{font-size:1.2vw; margin:0 10px;}
 .about-desc { hyphens: auto; text-align: left; width: 90%; margin: auto; grid-area: about-desc; font-size:1.5vw;}
 
  .who, .our-goal, .our-value{
-      padding-top:50px;
- }
+   padding-top:50px;}
 
 /*RADIO BUTTONS*/
 
@@ -683,10 +683,11 @@ figcaption{font-size:1.2vw; margin:0 10px;}
 }
 
 #ten,#twentyfive,#fifty{margin-right:20px;}
+.radios label{min-width:100px;}
 
 .about-menu input[type="radio"]:checked + label, .radios input[type="radio"]:checked + label {
 	background-color: rgba(55, 125, 206);
-	color: #fff;
+	color: white;
 }
 
 .about-container{display:grid;} /*whole thing*/
@@ -742,11 +743,9 @@ img{  margin-top:-15px;}
   flex-direction: row;
   align-items: center;
   margin: auto;
-  border: 3px solid green;
 }
 .own{
   margin:-40px, auto;
-  border: 3px solid red;
 }
 .own, .name, .contact{
   display:block;
@@ -807,7 +806,7 @@ input {
 }
 .sample input[type="radio"]:checked + label {
 	background-color: #a1b91d;
-	color: #fff;
+	color: white;
 }
 
 .syria-container, .us-container{display:flex; flex-direction:row;}
