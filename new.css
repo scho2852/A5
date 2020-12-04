@@ -316,6 +316,7 @@ a {
   background-color: white;
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,.2);
   position: fixed;
+  z-index:999;
 }
 
 .header ul {
@@ -334,6 +335,7 @@ a {
 .menu a.active, .active{
   border-bottom: 3px solid #F4B57A;
 }
+
 
 .header li a {
   align-items:center;
@@ -386,16 +388,6 @@ a {
   max-height: 50%;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
 /*index*/
 .grid-container {
   display: grid;
@@ -412,8 +404,6 @@ a {
 }
 
 .header{grid-area: header; padding-top: 50px; padding-bottom: 30px;}
-
-
 .header, .about-title .phrase, .us-title .work-title, .cta-msg, .license,.contact, {
   margin: auto;
 }
@@ -552,6 +542,7 @@ button{
   box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
   position:relative;
   transition: all 0.3s;
+  z-index: 1;
 }
 .donate-button:hover{
 transform: scale(1.08);
@@ -631,24 +622,21 @@ figcaption{font-size:1.2vw; margin:0 10px;}
   margin: 0 100px 0 100px;
 }
 .about-menu label, .radios label{
+  cursor: pointer;
   border-radius: 5px;
   font-weight:bold;
 	display: grid;
-	cursor: pointer;
   min-width: 250px;
 	margin: auto;
 	padding: 20px 20px;
-	border-right: 1px solid #abb2b7;
-	background: #bdc3c7;
-	color: #555e64;
+	background: rgb(199, 199, 199);
+	color: rgb(66, 66, 66);
 	font-size: 25px;
   text-align: center;
-	line-height: 1;
-	transition: .2s;
+	transition: .3s;
 }
 
 #ten,#twentyfive,#fifty{margin-right:20px;}
-.radios label{min-width:100px;}
 
 .about-menu input[type="radio"]:checked + label, .radios input[type="radio"]:checked + label {
 	background-color: rgba(55, 125, 206);
@@ -661,27 +649,19 @@ figcaption{font-size:1.2vw; margin:0 10px;}
   flex-direction: row;
 }
 
-.about-pic{
-  flex:1;
-}
-
-.about-text{
-  flex:1;
-}
 
 .us-container{
   display: flex;
   flex-direction: row;
 }
 
-.us-pic{flex:1;}
-.us-text{flex:1;}
 
+#ten label,#twentyfive label, #fifty label { min-width: 100px;}
 
 
 /* RESPONSIVE */
 @media (min-width: 48em) { /*laptop*/
-img{  margin-top:-15px;}
+img{ margin-top:-15px;}
 .us{padding-top:0px;}
   .header li {
     float: left; padding-top:10px;
@@ -743,7 +723,6 @@ input {
 
 .syria-container, .us-container{display:flex; flex-direction:row;}
 .syria-text{flex:1;margin:auto; }
-.syria-pic{flex:1;}
 .what-container{display:flex; flex-direction: column;}
 .what-front-container{
   width:100%;
@@ -752,22 +731,14 @@ input {
   margin-top: 150px;
 
 }
-
-.what-pic{
-  flex:1;
-}
-
-.what-text{
-  flex:1;
-}
-
+.about-pic, .about-text, .us-pic, .us-text, .syria-pic, .what-pic, .what-text, .what-work-pic, .what-work-text{
+  flex:1;}
 .what-work-container{
   display: flex;
   flex-direction: row;
 }
 
-.what-work-pic{flex:1;}
-.what-work-text{flex:1;}
+
 
 .syria-work-container{display:flex; flex-direction:column;}
 .syria-work-title{flex:0.2;}
@@ -855,3 +826,4 @@ input {
   .license{display:flex; flex-direction:column;}
   
 }
+

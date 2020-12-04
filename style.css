@@ -1,22 +1,18 @@
-.impact-container{display:grid;} /*whole thing*/
-.impact-front-container{
-  display: flex;
-  flex-direction: row;
+.money label{
+  border-radius: 5px;
+  font-weight:bold;
+	display: grid;
+	cursor: pointer;
+  min-width: 100px;
+	margin: auto;
+	padding: 20px 20px;
+	background: rgb(199, 199, 199);
+	color: rgb(66, 66, 66);
+	font-size: 25px;
+  text-align: center;
+	line-height: 1;
+	transition: .2s;
 }
 
-.impact-pic{
-  flex:1;
-}
-
-.impact-text{
-  flex:1;
-}
-
-.accom-container{
-  display: flex;
-  flex-direction: row;
-}
-.accom-text{}
-
-.us-pic{flex:1;}
-.us-text{flex:1;}
+.about-pic, .about-text, .us-pic, .us-text, .syria-pic, .what-pic, .what-text, .what-work-pic, .what-work-text{
+  flex:1;}
